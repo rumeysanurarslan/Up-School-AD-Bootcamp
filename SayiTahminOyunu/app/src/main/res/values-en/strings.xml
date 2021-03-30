@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SayiTahminOyunu</string>
+    <string name="oyun_adi">Guess the Number</string>
+    <string name="tahminHint">Your Guess</string>
+    <string name="tahminEt">Guess</string>
+    <string name="ipucuMetin">Please Enter a Number</string>
+    <string name="skor">"Score: "</string>
+    <string name="buyuk">Please Try A Larger Number</string>
+    <string name="kucuk">Please Try a Smaller Number</string>
+    <string name="dogruTahmin">Congratulation, you guessed it !</string>
+</resources>

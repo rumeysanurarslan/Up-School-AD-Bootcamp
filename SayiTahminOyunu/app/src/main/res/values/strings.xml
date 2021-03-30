@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SayiTahminOyunu</string>
+    <string name="oyun_adi">Sayı Tahmin Oyunu</string>
+    <string name="tahminHint">Tahmininiz</string>
+    <string name="tahminEt">Tahmin Et</string>
+    <string name="ipucuMetin">Lütfen Bir Sayı Giriniz</string>
+    <string name="skor">"Skorunuz: "</string>
+    <string name="buyuk">Lütfen Daha Büyük Bir Sayı Deneyiniz</string>
+    <string name="kucuk">Lütfen Daha Küçük Bir Sayı Deneyiniz</string>
+    <string name="dogruTahmin">Tebrikler, bildiniz !</string>
+</resources>
