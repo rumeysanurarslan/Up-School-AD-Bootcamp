@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BottomNavigationOdev</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="carpmaHeaderTitle">Multiplication Page</string>
+    <string name="toplamaHeaderTitle">Summation Page</string>
+    <string name="carpmaButon">Multiply</string>
+    <string name="toplamaButon">Sum</string>
+    <string name="ilkSayi">First Number</string>
+    <string name="ikinciSayi">Second Number</string>
+    <string name="toplamaMenuName">Toplama</string>
+    <string name="carpmaMenuName">Multiplication</string>
+    <string name="welcome">Welcome !</string>
+    <string name="toplamaSonuc">Summation Result :</string>
+    <string name="carpmaSonuc">Multiplication Result :</string>
+    <string name="ipucuMetin">TextInputs are not be empty !</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

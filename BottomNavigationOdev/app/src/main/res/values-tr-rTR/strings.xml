@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BottomNavigationOdev</string>
+    <string name="carpmaHeaderTitle">Çarpma İşlemi Sayfası</string>
+    <string name="toplamaHeaderTitle">Toplama İşlemi Sayfası</string>
+    <string name="carpmaButon">Çarp</string>
+    <string name="toplamaButon">Topla</string>
+    <string name="ilkSayi">İlk Sayi</string>
+    <string name="ikinciSayi">İkinci Sayi</string>
+    <string name="toplamaMenuName">Sum</string>
+    <string name="carpmaMenuName">Çarpma</string>
+    <string name="welcome">Hoşgeldiniz !</string>
+    <string name="toplamaSonuc">Toplama Sonuç :</string>
+    <string name="carpmaSonuc">Çarpma Sonuç :</string>
+    <string name="ipucuMetin">Yazı alanları boş bırakılamaz !</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.bottomnavigationodev.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/toplamaFragment"
+        android:name="com.example.bottomnavigationodev.ToplamaFragment"
+        android:label="fragment_toplama"
+        tools:layout="@layout/fragment_toplama" >
+        <action
+            android:id="@+id/toplamaSonucGecis"
+            app:destination="@id/toplamaSonucFragment"
+            app:popUpTo="@id/toplamaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carpmaFragment"
+        android:name="com.example.bottomnavigationodev.CarpmaFragment"
+        android:label="fragment_carpma"
+        tools:layout="@layout/fragment_carpma" >
+        <action
+            android:id="@+id/carpmaSonucGecis"
+            app:destination="@id/carpmaSonucFragment"
+            app:popUpTo="@id/carpmaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/carpmaSonucFragment"
+        android:name="com.example.bottomnavigationodev.CarpmaSonucFragment"
+        android:label="fragment_carpma_sonuc"
+        tools:layout="@layout/fragment_carpma_sonuc" >
+        <argument
+            android:name="carpim"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/toplamaSonucFragment"
+        android:name="com.example.bottomnavigationodev.ToplamaSonucFragment"
+        android:label="fragment_toplama_sonuc"
+        tools:layout="@layout/fragment_toplama_sonuc" >
+        <argument
+            android:name="toplam"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+
+
+</navigation>
