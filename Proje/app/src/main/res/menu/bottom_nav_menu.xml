@@ -7,6 +7,9 @@
         android:icon="@drawable/anasayfa_ikon"
         android:title="@string/anasayfa" />
     <item
+        android:icon="@drawable/search_ikon"
+        android:title="@string/search" />
+    <item
         android:id="@+id/anasayfaFragment"
         android:icon="@drawable/logo_icon"
         android:title="@string/app"
@@ -16,4 +19,7 @@
         android:id="@+id/profilFragment"
         android:icon="@drawable/profil_ikon"
         android:title="@string/profil" />
+    <item
+        android:icon="@drawable/kampanya_ikon"
+        android:title="@string/kampanya" />
 </menu>

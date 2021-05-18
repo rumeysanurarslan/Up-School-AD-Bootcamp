@@ -9,4 +9,6 @@
     <string name="adress_placeholder">Adresslerim</string>
     <string name="fav_placeholder">My Favorites</string>
     <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="kampanya">Campaign</string>
 </resources>
