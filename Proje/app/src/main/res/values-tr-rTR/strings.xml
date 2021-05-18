@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proje</string>
+    <string name="hello_blank_fragment">Boş sayfa</string>
+    <string name="anasayfa">Anasayfa</string>
+    <string name="profil">Profil</string>
+    <string name="app">getir</string>
+    <string name="sepet_ekle">Sepete Ekle</string>
+    <string name="adress_placeholder">My Adresses</string>
+    <string name="fav_placeholder">Favorilerim</string>
+    <string name="logout">Çıkış Yap</string>
+</resources>

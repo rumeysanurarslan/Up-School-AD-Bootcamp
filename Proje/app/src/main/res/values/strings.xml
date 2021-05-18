@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Proje</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="anasayfa">Home</string>
+    <string name="profil">Profile</string>
+    <string name="app">getir</string>
+    <string name="sepet_ekle">Add to Basket</string>
+    <string name="adress_placeholder">Adresslerim</string>
+    <string name="fav_placeholder">My Favorites</string>
+    <string name="logout">Logout</string>
+</resources>
