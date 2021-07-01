@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FoodDeliveryApp</string>
+    <string name="hello_blank_fragment">Boş Sayfa</string>
+    <string name="anasayfa">Anasayfa</string>
+    <string name="arama">Arama</string>
+    <string name="sepet">Sepet</string>
+    <string name="profil">Profil</string>
+</resources>

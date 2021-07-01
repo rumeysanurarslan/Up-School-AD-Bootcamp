@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodDeliveryApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="anasayfa">Home</string>
+    <string name="arama">Search</string>
+    <string name="sepet">Shopping Basket</string>
+    <string name="profil">Profile</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/home_icon"
+        android:title="@string/anasayfa" />
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/arama_icon"
+        android:title="@string/arama" />
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/basket_icon"
+        android:title="@string/sepet" />
+    <item
+        android:id="@+id/anasayfaFragment"
+        android:icon="@drawable/profile_icon"
+        android:title="@string/profil" />
+</menu>

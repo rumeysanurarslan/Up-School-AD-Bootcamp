@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="yemekNesnesi" type="com.example.fooddeliveryapp.entity.Yemekler" />
+        <variable name="anasayfaToolbarBaslik" type="String" />
+        <variable name="yemekDetayViewModel" type="com.example.fooddeliveryapp.viewModel.YemekDetayViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.YemekDetayFragment"
+        android:background="#BFA1E4">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarYemekDetay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@{anasayfaToolbarBaslik}" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:background="@drawable/detail_page_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/card_yemek_adi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{yemekNesnesi.yemek_adi}"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/minusButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.759"
+                tools:text="Something" />
+
+            <TextView
+                android:id="@+id/card_yemek_fiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="21dp"
+                android:text='@{Double.toString(yemekNesnesi.yemek_fiyat)+" \u20BA"}'
+                android:textColor="#42995C"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/buttonGuncelle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_yemek_adi"
+                tools:text="$ 15.00" />
+
+            <ImageButton
+                android:id="@+id/minusButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/buttonGuncelle"
+                app:srcCompat="@drawable/ic_minus"
+                android:onClick="@{() -> yemekDetayViewModel.counterDecreased()}"/>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                tools:text="1"
+                android:text="@{yemekDetayViewModel.counter.toString()}"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/minusButton"
+                app:layout_constraintStart_toEndOf="@+id/minusButton"
+                app:layout_constraintTop_toTopOf="@+id/minusButton"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/plusButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="@+id/textView14"
+                app:srcCompat="@drawable/ic_plus"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:onClick="@{() -> yemekDetayViewModel.counterIncreased()}"/>
+
+            <Button
+                android:id="@+id/buttonGuncelle"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:background="@drawable/detail_page_cart_button_bg"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:padding="16dp"
+                android:paddingRight="16dp"
+                android:text="Sepete Ekle"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/card_yemek_resim"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_marginTop="128dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:transitionName="image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:load_image="@{yemekNesnesi.yemek_resim_adi}"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
